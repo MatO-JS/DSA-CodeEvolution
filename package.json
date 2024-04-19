@@ -1,0 +1,12 @@
+{
+  "name": "neetcodedsa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dynamicArray.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon hashTableCollision.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

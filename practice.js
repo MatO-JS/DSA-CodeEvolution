@@ -1,51 +1,31 @@
-//* What is a hashtable ?
-//?
+// contains duplicate
 
-//* Implementation
+const containsDuplicate = (arr, newSet = new Set()) => {
+  for (let i of arr) {
+    if (newSet.has(i)) return true;
+    newSet.add(i);
+  }
+  return false;
+};
 
-class HashTable {
+const ans = containsDuplicate([3, 15, 2, 75, 12, 5]);
 
-    constructor(size){
-        this.size = size;
-        this.table = new Array(size);
+console.log(ans);
 
+// two sum
+
+const twoSum = (nums, target, map = new Map()) => {
+  for (let index = 0; index < nums.length; index++) {
+    let num = nums[index];
+    let compliment = target - num;
+    let sumIndex = map.get(compliment);
+    let isTarget = map.has(compliment);
+    if (isTarget) {
+      retrun[(index, sumIndex)];
     }
 
-    hash(key){
-        let total = 0;
-        for(let i=0;i<key.length;i++){
-            total += key.charCodeAt(i);
-        }
-        return total % this.size;
-    }
-    
-    insertAt(key,value) {
+    map.set(sumIndex, index);
+  }
 
-        this.table[this.hash(key)] = value;
-    }
-
-    valueAt(key){
-        this.table[this.hash(key)];
-    }
-
-    removeAt(key){
-        this.table(this.hash(key)) = undefined;
-    }
-
-    display(){
-        for(let i=0;i<this.table.length;i++){
-            if(this.table[i])
-            console.log(i,this.table[i])
-        }
-    }
-}
-
-const table = new HashTable(5);
-console.log(table);
-
-table.insertAt("name", "Balu");
-table.insertAt("age", 55);
-
-table.display();
-
-console.log(table.valueAt("name"));
+  return [-1, -1];
+};

@@ -5,7 +5,7 @@
   "main": "dynamicArray.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon hashTableCollision.js"
+    "dev": "nodemon practice.js"
   },
   "author": "",
   "license": "ISC"

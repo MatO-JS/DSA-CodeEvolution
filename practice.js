@@ -24,7 +24,7 @@ const twoSum = (nums, target, map = new Map()) => {
       retrun[(index, sumIndex)];
     }
 
-    map.set(sumIndex, index);
+    map.set(num, index);
   }
 
   return [-1, -1];

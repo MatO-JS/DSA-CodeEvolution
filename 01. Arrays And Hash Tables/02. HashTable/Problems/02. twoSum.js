@@ -104,6 +104,8 @@ var twoSum = (nums, target, map = new Map()) => {
   return [-1, -1];
 };
 
+console.log(twoSum([2, 3, 4, 7, 5], 5));
+
 // Two sum algorithm source : https://www.youtube.com/watch?v=Ivyh3V4QolA
 
 var twoSum = function (nums, target) {
